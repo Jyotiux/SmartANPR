@@ -79,6 +79,9 @@ python main.py --source data/video.mp4
 * Output will be saved in `test.csv`.
 * Each row contains: `frame_nmr, car_id, car_bbox, license_plate_bbox, license_plate_bbox_score, license_number, license_number_score`.
 
+<img width="1203" height="789" alt="image" src="https://github.com/user-attachments/assets/05f8de96-cc7f-417c-b9a4-5fa400c07668" />
+
+
 ### Run the Web App
 
 ```bash
@@ -102,6 +105,7 @@ python app.py
   * Detect vehicle in real-time.
   * Check license plate against whitelist.
   * Open gate if authorized.
+<img width="1900" height="961" alt="Screenshot 2025-09-11 021935" src="https://github.com/user-attachments/assets/1326c366-3a89-4ea0-be44-baa5f15991e4" />
 
 ---
 

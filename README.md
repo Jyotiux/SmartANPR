@@ -108,6 +108,35 @@ python app.py
 <img width="1900" height="961" alt="Screenshot 2025-09-11 021935" src="https://github.com/user-attachments/assets/1326c366-3a89-4ea0-be44-baa5f15991e4" />
 
 ---
+## Dataset
+
+This project uses a license plate recognition dataset from **Roboflow Universe**:
+
+- **Dataset Name**: [License Plate Recognition](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/4)
+- **Source**: Roboflow Universe  
+- **Export Format**: YOLOv8 (images with corresponding `.txt` annotation files)
+
+The dataset includes annotated images of vehicles with clearly marked license plates. It is formatted for direct use with YOLOv8 training pipelines.
+
+---
+
+## Model Training
+
+YOLOv8 was trained on the above dataset using **Google Colab** to take advantage of free GPU resources. The training was optimized for low-resource environments with the following settings:
+
+- **Image size**: `256x256` (reduced for faster training)
+- **Epochs**: `10` (for quick experimentation)
+- **Batch size**: `16`
+- **Model**: `YOLOv8n` (Nano version)
+
+Training was performed in Google Colab using this notebook:
+
+🔗 [**Google Colab Notebook**](https://colab.research.google.com/drive/1dBs-_DG6hKJrfsnSDWgRRPkSrDcNwz4k?usp=sharing)
+
+This generated the `best.pt` weights file used in the project, stored in the `models/` directory.
+
+
+---
 
 ## Extending the Project
 

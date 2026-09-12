@@ -1,0 +1,25 @@
+sample_id,frame_nmr,plate_bbox,true_plate,notes
+# ------------------------------------------------------------------------------
+# FIXED EVALUATION GROUND TRUTH  (template - copy to ground_truth.csv and fill in)
+# ------------------------------------------------------------------------------
+# One row = one license plate instance you have visually confirmed.
+#
+# Columns:
+#   sample_id   : stable unique id for this plate instance, e.g. gt_001.
+#                 NEVER renumber existing ids - the set must stay fixed so every
+#                 future experiment is compared on exactly the same samples.
+#   frame_nmr   : integer frame index in the LOCAL video (0-based, as read by
+#                 cv2.VideoCapture in the same order main.py reads it).
+#   plate_bbox  : license-plate box in that frame, pixels, "x1 y1 x2 y2"
+#                 (space-separated, quoted). Same convention as test.csv.
+#   true_plate  : the ACTUAL characters you read with your own eyes, uppercase,
+#                 no spaces. This is the ground truth. Do NOT copy it from
+#                 test.csv (that is model output, not truth).
+#   notes       : optional. e.g. "angled", "motion blur", "partially occluded".
+#
+# Lines starting with '#' and blank lines are ignored by the evaluator.
+# Remove these comment lines in your real ground_truth.csv if you prefer.
+#
+# Example (delete before use):
+# gt_001,2,"960 1758 1215 1874",NA13NRU,clear frontal
+# gt_002,94,"1237 1677 1441 1787",GX15OGJ,slight angle

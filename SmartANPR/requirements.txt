@@ -1,0 +1,11 @@
+ultralytics==8.2.90
+pandas==2.2.2
+opencv-python==4.10.0.84
+numpy==1.26.4
+scipy==1.11.4
+easyocr==1.7.0
+filterpy==1.4.5
+torch>=2.0.0
+torchvision>=0.15.0
+tqdm>=4.65.0
+Pillow<10

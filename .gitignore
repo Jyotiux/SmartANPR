@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# macOS / IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Large media
+data/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Generated outputs
+output.mp4
+output.avi
+test_interpolated.csv
+eval/results/
+
+# Local evaluation
+eval/ground_truth.csv
+
+# Archives
+*.zip
+
+# Logs / temporary files
+*.log
+*.tmp
+*.bak
+
+# SORT demo data
+sort/data/
+
+SmartANPR/docs/
+# Training checkpoint not needed for inference
+**/models/last.pt
